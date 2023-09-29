@@ -10,8 +10,13 @@ class AppAssets {
   static String code = 'assets/images/coding.png';
   static String brush = 'assets/images/brush-stroke.png';
   static String analyst = 'assets/images/analytics.png';
-  static String work1 = 'assets/images/work1.jpg';
+  static String work1 = 'assets/images/te.jpg';
   static String work2 = 'assets/images/work2.jpg';
+  static String work3 = 'assets/images/app.jpg';
+  static String work4 = 'assets/images/login.jpg';
+  static String work5 = 'assets/images/st.jpg';
+  static String work6 = 'assets/images/c.jpg';
+  
   static String share = 'assets/images/share.png';
 
 }

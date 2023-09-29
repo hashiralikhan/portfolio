@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/views/home_page.dart';
+import 'package:portfolio/views/main_dashboard.dart';
 
 void main() {
+ 
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomePage(),
+        body: MainDashBoard(),
       ),
     );
   }

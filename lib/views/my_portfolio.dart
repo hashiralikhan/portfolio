@@ -14,28 +14,28 @@ class MyPortfolio extends StatefulWidget {
 }
 
 class _MyPortfolioState extends State<MyPortfolio> {
-final onH0verEffect = Matrix4.identity()..scale(1.0);
+  final onH0verEffect = Matrix4.identity()..scale(1.0);
 
   List images = <String>[
-    AppAssets.work1,
+    AppAssets.work5,
     AppAssets.work2,
+    AppAssets.work4,
+    AppAssets.work3,
     AppAssets.work1,
-    AppAssets.work2,
-    AppAssets.work1,
-    AppAssets.work2,
+    AppAssets.work6,
   ];
 
   var hoveredIndex;
 
   @override
   Widget build(BuildContext context) {
-  final Size size = MediaQuery.of(context).size;
+    final Size size = MediaQuery.of(context).size;
     return HelperClass(
       mobile: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           buildProjectText(),
-          Constants.sizedBox(height: 40.0,width: 0),
+          Constants.sizedBox(height: 40.0, width: 0),
           buildProjectGridView(crossAxisCount: 1)
         ],
       ),
@@ -43,7 +43,7 @@ final onH0verEffect = Matrix4.identity()..scale(1.0);
         mainAxisSize: MainAxisSize.min,
         children: [
           buildProjectText(),
-          Constants.sizedBox(height: 40.0,width: 0),
+          Constants.sizedBox(height: 40.0, width: 0),
           buildProjectGridView(crossAxisCount: 2)
         ],
       ),
@@ -51,7 +51,7 @@ final onH0verEffect = Matrix4.identity()..scale(1.0);
         mainAxisSize: MainAxisSize.min,
         children: [
           buildProjectText(),
-          Constants.sizedBox(height: 40.0,width: 0),
+          Constants.sizedBox(height: 40.0, width: 0),
           buildProjectGridView(crossAxisCount: 3),
         ],
       ),
@@ -123,14 +123,14 @@ final onH0verEffect = Matrix4.identity()..scale(1.0);
                           style: AppTextStyles.montserratStyle(
                               color: Colors.black87, fontSize: 20),
                         ),
-                        Constants.sizedBox(height: 15.0,width: 0),
+                        Constants.sizedBox(height: 15.0, width: 0),
                         Text(
                           'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
                           style:
                               AppTextStyles.normalStyle(color: Colors.black87),
                           textAlign: TextAlign.center,
                         ),
-                        Constants.sizedBox(height: 30.0,width: 0),
+                        Constants.sizedBox(height: 30.0, width: 0),
                         CircleAvatar(
                           maxRadius: 25,
                           backgroundColor: Colors.white,

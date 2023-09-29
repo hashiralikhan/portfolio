@@ -53,7 +53,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
               });
             },
             child: buildAnimatedContainer(
-              title: 'Graphic Designing',
+              title: 'Website Design',
               asset: AppAssets.brush,
               hover: isGraphic,
             ),
@@ -67,7 +67,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
               });
             },
             child: buildAnimatedContainer(
-              title: 'Digital Marketing',
+              title: 'Website Design',
               asset: AppAssets.analyst,
               hover: isDataAnalyst,
             ),
@@ -104,7 +104,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Graphic Designing',
+                  title: 'Website Development',
                   asset: AppAssets.brush,
                   hover: isGraphic,
                 ),
@@ -120,7 +120,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
               });
             },
             child: buildAnimatedContainer(
-              title: 'Digital Marketing',
+              title: 'Web Design',
               asset: AppAssets.analyst,
               hover: isDataAnalyst,
               width: 725.0,
@@ -150,7 +150,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
                   hover: isApp,
                 ),
               ),
-              Constants.sizedBox(width: 24.0,height: 0),
+              Constants.sizedBox(width: 20.0,height: 0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -159,12 +159,12 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Graphic Designing',
+                  title: 'Website Development',
                   asset: AppAssets.brush,
                   hover: isGraphic,
                 ),
               ),
-              Constants.sizedBox(width: 24.0,height: 0),
+              Constants.sizedBox(width: 20.0,height: 0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -173,7 +173,7 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Digital Marketing',
+                  title: 'Web Design',
                   asset: AppAssets.analyst,
                   hover: isDataAnalyst,
                 ),
@@ -250,8 +250,9 @@ bool isApp = false, isGraphic = false, isDataAnalyst = false;
           ),
           Constants.sizedBox(height: 12.0,width: 0),
           Text(
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-            ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,',
+            'I create all Mobile Application '
+            'User-Friendly & mobile-friendly, also Create '
+            'Responsive Websites',
             style: AppTextStyles.normalStyle(fontSize: 14.0),
             textAlign: TextAlign.center,
           ),

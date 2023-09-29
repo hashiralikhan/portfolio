@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/globals/app_assets.dart';
 
-
-
 class ProfileAnimation extends StatefulWidget {
   const ProfileAnimation({Key? key}) : super(key: key);
 
@@ -20,17 +18,18 @@ class _ProfileAnimationState extends State<ProfileAnimation>
   void initState() {
     super.initState();
     _controller =
-        AnimationController(vsync: this, duration: const Duration(seconds: 3))
-          ..repeat(reverse: true);
+        AnimationController(vsync: this, duration: const Duration(seconds: 3));
 
     _animation = Tween(begin: const Offset(0, 0.05), end: const Offset(0, 0))
-        .animate(_controller);
+        .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+    _controller.forward();
   }
 
   @override
   void dispose() {
-    super.dispose();
     _controller.dispose();
+    super.dispose();
+    
   }
 
   @override
